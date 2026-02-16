@@ -1,0 +1,19 @@
+[project]
+name = "tvpdownloader"
+version = "0.1.0"
+description = "Utility for downloading videos from TVP VOD"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Jakub Piech", email = "piechjakub99@gmail.com" }]
+dependencies = [
+    "alive-progress>=3.3.0",
+    "m3u8>=6.0.0",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+tvpdownloader = "tvpdownloader:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
